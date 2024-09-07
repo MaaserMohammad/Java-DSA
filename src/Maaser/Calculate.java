@@ -11,7 +11,7 @@ public class Calculate {
         double num1 = input.nextDouble();
 
         //now put thr some number for the operator
-        System.out.println("select the opertator (+,-,*,/):");
+        System.out.println("select the operator (+,-,*,/):");
         char operator = input.next().charAt(0);
 
         //for the second number
@@ -26,11 +26,11 @@ public class Calculate {
         } else if (operator == '*') {
             result = num1 * num2;
         } else if (operator == '/') {
-            //check for the divison by zero
+            //check for the division by zero
             if (num2 != 0) {
                 result = num1 / num2;
             } else {
-                System.out.println("Error: can't didvide by zero");
+                System.out.println("Error: can't divide by zero");
                 return;
             }
         } else {

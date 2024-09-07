@@ -15,7 +15,7 @@ public class SimpleIntrest {
         System.out.print("enter the rate");
         double rate= input.nextDouble();
 
-       double simpleintrest= (time * principal * rate)/100;
+        double simpleintrest= (time * principal * rate)/100;
         System.out.println("Total simple  intrest=" + simpleintrest);
     }
 }
