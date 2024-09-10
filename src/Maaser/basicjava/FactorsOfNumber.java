@@ -8,9 +8,9 @@ public class FactorsOfNumber {
             System.out.print("Enter a positive integer: ");
             int number = in.nextInt();
             System.out.println("Factors of " + number + ":");
-            for (int i = 1; i <= number; i++) {
-                if (number % i == 0) {
-                    System.out.print(i + " ");
+             for (int i = 1;i<=number;i++){
+                 if (number % i == 0){
+                 System.out.println(i+ " ");
                 }
             }
         }
