@@ -10,19 +10,17 @@ public class Fibonacci {
         int n = input.nextInt();
 
         // Initialize the first two terms
-        int term1 = 0;
-        int term2 = 1;
+        int a = 0;
+        int b = 1;
 
         System.out.print("Fibonacci series up to " + n + " terms: ");
         for (int i = 1; i <= n; i++) {
-            System.out.print(term1 + " ");
+            System.out.print(a + " ");
 
             // Calculate the next term
-            int nextTerm = term1 + term2;
-            term1 = term2;
-            term2 = nextTerm;
+            int nextTerm = a + b;
+            a = b;
+            b = nextTerm;
         }
-
-        input.close();
     }
 }
