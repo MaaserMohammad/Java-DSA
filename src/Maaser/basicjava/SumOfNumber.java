@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class SumOfNumber {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        //Take integer inputs till the user enters 0 and print the sum of all numbers
         int sum= 0;
         int number;
         while (true){

@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class DifferenceOfSum {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        //Subtract the Product and Sum of Digits of an Integer
         System.out.println("Enter the number: ");
         int n= in.nextInt();
         int sum=0;
