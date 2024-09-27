@@ -6,8 +6,8 @@ import java.util.Scanner;
 public class CircleArea_Circum {
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
-        System.out.print("Enter the radius: ");
 
+        System.out.print("Enter the radius of the circle: ");
         double radius = in.nextDouble();
         //Area = PI*radius*radius
         double area = Math.PI * (radius * radius);
