@@ -20,13 +20,30 @@ public class StudentMarksheet {
             System.out.print("Enter Marks for Subject " + (i + 1) + ": ");
             int marks = in.nextInt();
 
-        System.out.print("Enter Marks of " + count + " Subject: ");
-        for (i = 0; i < count; i++) {
-            totalMarks += in.nextInt();
+            while (marks < 0 || marks > 100) {
+                System.out.print("Invalid marks. Please enter marks between 0 and 100 for Subject " + (i + 1) + ": ");
+                marks = in.nextInt();
+            }
+
+            totalMarks += marks;
         }
 
-        System.out.println("Total Marks of the subject= " + totalMarks);
-        // Each subject is of 100 Marks
         percentage = (totalMarks / (count * 100)) * 100;
+        average = totalMarks / count;
+
+        System.out.println("Total Marks: " + totalMarks);
+        System.out.printf("Percentage: %.2f%%\n", percentage);
+        System.out.printf("Average Marks: %.2f\n", average);
+
+        if (percentage < 30) {
+            System.out.println("Result: Fail");
+        } else if (percentage < 70) {
+            System.out.println("Result: Pass");
+        } else if (percentage < 80) {
+            System.out.println("Result: First Division");
+        } else {
+            System.out.println("Result: Distinction");
+        }
+
     }
 }
