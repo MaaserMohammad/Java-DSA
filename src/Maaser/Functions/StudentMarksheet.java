@@ -8,16 +8,15 @@ public class StudentMarksheet {
         int count, i;
         float totalMarks = 0, percentage, average;
 
-
-        System.out.println("Enter Number of Subject");
+        System.out.print("Enter Number of Subject: ");
         count = in.nextInt();
 
-        System.out.println("Enter Marks of " + count + " Subject");
+        System.out.print("Enter Marks of " + count + " Subject: ");
         for (i = 0; i < count; i++) {
             totalMarks += in.nextInt();
         }
 
-        System.out.println("Total MArks : " + totalMarks);
+        System.out.println("Total Marks of the subject= " + totalMarks);
         // Each subject is of 100 Marks
         percentage = (totalMarks / (count * 100)) * 100;
     }
