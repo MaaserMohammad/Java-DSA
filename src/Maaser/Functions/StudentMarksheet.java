@@ -16,6 +16,11 @@ public class StudentMarksheet {
             return;
         }
 
+        for (int i = 0; i < count; i++) {
+            // Change here maaser: Prompt for each subject
+            System.out.print("Enter Marks for Subject " + (i + 1) + ": ");
+            int marks = in.nextInt();
+
         System.out.print("Enter Marks of " + count + " Subject: ");
         for (i = 0; i < count; i++) {
             totalMarks += in.nextInt();
