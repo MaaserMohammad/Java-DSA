@@ -5,11 +5,16 @@ import java.util.Scanner;
 public class StudentMarksheet {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        int count, i;
-        float totalMarks = 0, percentage, average;
+        int count;
+        float totalMarks = 0, percentage,average;
 
-        System.out.print("Enter Number of Subject: ");
+        System.out.print("Enter Number of Subjects: ");
         count = in.nextInt();
+
+        if (count <= 0) {
+            System.out.println("Invalid number of subjects.");
+            return;
+        }
 
         System.out.print("Enter Marks of " + count + " Subject: ");
         for (i = 0; i < count; i++) {
