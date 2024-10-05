@@ -18,10 +18,13 @@ public class PythagoreanTriplet {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        System.out.print("Enter the size of the array: ");
         int size = in.nextInt();
+
         int ar[] = new int[size] ;
-        int ar_size = ar.length;
-        if (isTriplet(ar, ar_size) == true)
+        System.out.print("Enter the array elements: ");
+        int arrsize = ar.length;
+        if (isTriplet(ar, arrsize) == true)
             System.out.println("Yes");
         else
             System.out.println("No");
