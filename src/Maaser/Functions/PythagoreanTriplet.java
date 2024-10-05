@@ -23,11 +23,14 @@ public class PythagoreanTriplet {
 
         int ar[] = new int[size] ;
         System.out.print("Enter the array elements: ");
+        for (int i = 0; i < size; i++){
+            ar[i] = in.nextInt();
+        }
         int arrsize = ar.length;
         if (isTriplet(ar, arrsize) == true)
-            System.out.println("Yes");
+            System.out.println("Yes,the array contains a Pythagorean triplet.");
         else
-            System.out.println("No");
+            System.out.println("No,the array does not contain a Pythagorean triplet. ");
     }
 }
 
