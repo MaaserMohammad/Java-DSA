@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ToDoList {
-    // ArrayList to store tasks
     private static ArrayList<String> tasks = new ArrayList<>();
 
     public static void main(String[] args) {
@@ -39,8 +38,6 @@ public class ToDoList {
                     System.out.println("Invalid choice. Please try again.");
             }
         } while (choice != 4);
-
-        in.close();
     }
 
     // Method to add a task
