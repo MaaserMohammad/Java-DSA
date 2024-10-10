@@ -10,16 +10,21 @@ public class ToDoList {
         Scanner in = new Scanner(System.in);
         int choice;
 
+        //Title for the app
+        System.out.println("🌟 Welcome to the Maaser To-Do List App 🌟");
+
+
+
         // Menu-driven program
         do {
             System.out.println("\n===== To-Do List Menu =====");
-            System.out.println("1. Add Task");
-            System.out.println("2. View Tasks");
-            System.out.println("3. Mark Task as Done");
-            System.out.println("4. Exit");
+            System.out.println("1. ➕ Add Task");
+            System.out.println("2. \uD83D\uDCCB View Tasks");
+            System.out.println("3. ✅ Mark Task as Done");
+            System.out.println("4. ❌ Exit");
             System.out.print("Enter your choice: ");
             choice = in.nextInt();
-            in.nextLine();  // Consume newline
+            in.nextLine(); // newline
 
             switch (choice) {
                 case 1:
@@ -45,17 +50,17 @@ public class ToDoList {
         System.out.print("Enter the task to add: ");
         String task = scanner.nextLine();
         tasks.add(task);
-        System.out.println("Task added successfully!");
+        System.out.println("✅ Task added successfully!");
     }
 
     // Method to view all tasks
     private static void viewTasks() {
         System.out.println("\nYour Tasks:");
         if (tasks.isEmpty()) {
-            System.out.println("No tasks available.");
+            System.out.println("\uD83D\uDCED No tasks available.");
         } else {
             for (int i = 0; i < tasks.size(); i++) {
-                System.out.println((i + 1) + ". " + tasks.get(i));
+                System.out.println((i + 1) + ". " + tasks.get(i) + " 🚀");
             }
         }
     }
@@ -63,7 +68,7 @@ public class ToDoList {
     // Method to mark a task as done
     private static void markTaskDone(Scanner scanner) {
         if (tasks.isEmpty()) {
-            System.out.println("No tasks available to mark as done.");
+            System.out.println("No tasks available to mark as done. \uD83D\uDE15");
             return;
         }
 
@@ -73,11 +78,13 @@ public class ToDoList {
 
         if (taskNumber > 0 && taskNumber <= tasks.size()) {
             tasks.remove(taskNumber - 1);
-            System.out.println("Task marked as done!");
+            System.out.println("\uD83C\uDF89 Task marked as done!");
         } else {
             System.out.println("Invalid task number.");
         }
     }
 }
+
+
 
 
