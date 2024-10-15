@@ -78,7 +78,7 @@ public class ToDoList {
 
         if (taskNumber > 0 && taskNumber <= tasks.size()) {
             tasks.remove(taskNumber - 1);
-            System.out.println("\uD83C\uDF89 Task marked as done!");
+            System.out.println("\uD83C\uDF89 Task marked has done!");
         } else {
             System.out.println("You entered the Invalid task number.");
         }
