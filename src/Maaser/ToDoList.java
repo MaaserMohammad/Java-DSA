@@ -68,7 +68,7 @@ public class ToDoList {
     // Method to mark a task as done
     private static void markTaskDone(Scanner scanner) {
         if (tasks.isEmpty()) {
-            System.out.println("No tasks available to mark as done. \uD83D\uDE15");
+            System.out.println("there is No tasks available to mark as done. \uD83D\uDE15");
             return;
         }
 
