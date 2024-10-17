@@ -21,7 +21,7 @@ public class ToDoList {
             System.out.println("1. ➕ Add Task");
             System.out.println("2. \uD83D\uDCCB View Tasks");
             System.out.println("3. ✅ Mark Task as Done");
-            System.out.println("4. ❌ Exit");
+            System.out.println("4. ❌ Exit the list");
             System.out.print("Enter your choice: ");
             choice = in.nextInt();
             in.nextLine(); // newline
