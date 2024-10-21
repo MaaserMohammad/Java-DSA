@@ -49,6 +49,17 @@ class Library{
         System.out.println("Book not Available or already isssued. ");
     }
 
+    public void returnBook(String title) {
+        for (Book book: books) {
+            if(book.title.equalsIgnoreCase(title) && book.isIssued) {
+                book.isIssued = false;
+                System.out.println("Book returned: " +book.title);
+                return;
+            }
+        }
+        System.out.println();
+    }
+
 
 }
 
