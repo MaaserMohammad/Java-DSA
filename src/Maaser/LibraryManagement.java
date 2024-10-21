@@ -28,7 +28,31 @@ class Library{
         books.add(newBook);
         System.out.println("book added: " + title);
     }
+
+    public void displayBooks(){
+        System.out.println("Available books in the library: ");
+        for (Book book : books){
+            if (!book.isIssued){
+                System.out.println("Title: " + ", Author: " +book.author);
+            }
+        }
+    }
+
+    public void issueBook(String title){
+        for (Book book : books) {
+            if(book.title.equalsIgnoreCase(title) && !book.isIssued) {
+                book.isIssued = true;
+                System.out.println("book issued: " + book.title);
+                return;
+            }
+        }
+        System.out.println("Book not Available or already isssued. ");
+    }
+
+
 }
+
+
 
 public class LibraryManagement {
     public static void main(String[] args) {
