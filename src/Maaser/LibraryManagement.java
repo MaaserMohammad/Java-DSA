@@ -57,7 +57,7 @@ class Library{
                 return;
             }
         }
-        System.out.println();
+        System.out.println("Invalid book return attempt.");
     }
 
 
