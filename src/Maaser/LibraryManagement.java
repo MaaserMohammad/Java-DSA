@@ -22,6 +22,12 @@ class Library{
     public Library() {
         books = new ArrayList<>();
     }
+
+    public void addBook(String title, String author){
+        Book newBook = new Book(title, author);
+        books.add(newBook);
+        System.out.println("book added: " + title);
+    }
 }
 
 public class LibraryManagement {
