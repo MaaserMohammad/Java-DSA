@@ -106,7 +106,7 @@ public class LibraryManagement {
                     break;
                 default:
                     System.out.println("Invalid choice! Please try again.");
+            }
         }
-
     }
 }
