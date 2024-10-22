@@ -46,7 +46,7 @@ class Library{
                 return;
             }
         }
-        System.out.println("Book not Available or already isssued. ");
+        System.out.println("Book not Available or already issued. ");
     }
 
     public void returnBook(String title) {
