@@ -79,6 +79,33 @@ public class LibraryManagement {
             in.nextLine();
 
 
+            switch (choice) {
+                case 1:
+                    System.out.println("Enter book title: ");
+                    String title = in.nextLine();
+                    System.out.print("Enter book author: ");
+                    String author = in.nextLine();
+                    library.addBook(title, author);
+                    break;
+                case 2:
+                    library.displayBooks();
+                    break;
+                case 3:
+                    System.out.print("Enter book title to issue: ");
+                    String issueTitle = in.nextLine();
+                    library.issueBook(issueTitle);
+                    break;
+                case 4:
+                    System.out.print("Enter book title to return: ");
+                    String returnTitle = in.nextLine();
+                    library.returnBook(returnTitle);
+                    break;
+                case 5:
+                    exit = true;
+                    System.out.println("Exiting the Library Management System...");
+                    break;
+                default:
+                    System.out.println("Invalid choice! Please try again.");
         }
 
     }
