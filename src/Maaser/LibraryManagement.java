@@ -59,17 +59,27 @@ class Library{
         }
         System.out.println("Invalid book return attempt.");
     }
-
-
 }
-
-
 
 public class LibraryManagement {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         Library library = new Library();
         boolean exit = false;
+
+        while (!exit) {
+            System.out.println("\nLibrary Management System");
+            System.out.println("1. Add Book");
+            System.out.println("2. Display Available Books");
+            System.out.println("3. Issue Book");
+            System.out.println("4. Return Book");
+            System.out.println("5. Exit");
+            System.out.print("Enter your choice: ");
+            int choice = in.nextInt();
+            in.nextLine();
+
+
+        }
 
     }
 }
