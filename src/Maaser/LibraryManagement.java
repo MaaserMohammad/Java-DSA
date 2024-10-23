@@ -46,7 +46,7 @@ class Library{
                 return;
             }
         }
-        System.out.println("Book not Available or already issued. ");
+        System.out.println("Book is not Available or already issued. ");
     }
 
     public void returnBook(String title) {
@@ -68,9 +68,9 @@ public class LibraryManagement {
         boolean exit = false;
 
         while (!exit) {
-            System.out.println("\nLibrary Management System");
-            System.out.println("1. Add Book");
-            System.out.println("2. Display Available Books");
+            System.out.println("\nLibrary Management System.");
+            System.out.println("1. Add a Book");
+            System.out.println("2. Display the Available Books");
             System.out.println("3. Issue the Book");
             System.out.println("4. Return the Book");
             System.out.println("5. Exit");
@@ -81,9 +81,9 @@ public class LibraryManagement {
 
             switch (choice) {
                 case 1:
-                    System.out.println("Enter book title: ");
+                    System.out.println("Enter the book title: ");
                     String title = in.nextLine();
-                    System.out.print("Enter book author: ");
+                    System.out.print("Enter the book author: ");
                     String author = in.nextLine();
                     library.addBook(title, author);
                     break;
@@ -91,12 +91,12 @@ public class LibraryManagement {
                     library.displayBooks();
                     break;
                 case 3:
-                    System.out.print("Enter book title to issue: ");
+                    System.out.print("Enter the book title to issue: ");
                     String issueTitle = in.nextLine();
                     library.issueBook(issueTitle);
                     break;
                 case 4:
-                    System.out.print("Enter book title to return: ");
+                    System.out.print("Enter the book title to return: ");
                     String returnTitle = in.nextLine();
                     library.returnBook(returnTitle);
                     break;
