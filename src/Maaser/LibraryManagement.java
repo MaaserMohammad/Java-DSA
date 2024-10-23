@@ -71,8 +71,8 @@ public class LibraryManagement {
             System.out.println("\nLibrary Management System");
             System.out.println("1. Add Book");
             System.out.println("2. Display Available Books");
-            System.out.println("3. Issue Book");
-            System.out.println("4. Return Book");
+            System.out.println("3. Issue the Book");
+            System.out.println("4. Return the Book");
             System.out.println("5. Exit");
             System.out.print("Enter your choice: ");
             int choice = in.nextInt();
@@ -102,7 +102,7 @@ public class LibraryManagement {
                     break;
                 case 5:
                     exit = true;
-                    System.out.println("Exiting the Library Management System...");
+                    System.out.println("Exiting the Library Management System...Finally Exit.");
                     break;
                 default:
                     System.out.println("Invalid choice! Please try again.");
