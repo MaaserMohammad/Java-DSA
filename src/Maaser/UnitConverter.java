@@ -9,5 +9,7 @@ public class UnitConverter {
         return (celsius * 9/5) + 32;
     }
 
-
+    public static double gramsToPounds(double grams) {
+        return grams * 0.00220462;
+    }
 }
