@@ -22,4 +22,7 @@ public class UnitConverter {
         System.out.println("1. Kilometers to Miles");
         System.out.println("2. Celsius to Fahrenheit");
         System.out.println("3. Grams to Pounds");
+
+        int choice = in.nextInt();
+        double input, result;
 }
