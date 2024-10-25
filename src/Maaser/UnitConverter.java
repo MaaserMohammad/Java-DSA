@@ -50,7 +50,7 @@ public class UnitConverter {
                 System.out.println("Invalid choice.");
         }
 
-        scanner.close();
+        in.close();
     }
 }
-}
+
