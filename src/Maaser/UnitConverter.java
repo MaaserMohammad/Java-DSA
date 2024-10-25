@@ -33,4 +33,24 @@ public class UnitConverter {
                 result = kilometersToMiles(input);
                 System.out.println(input + " kilometers is " + result + " miles.");
                 break;
-}
+
+            case 2:
+                System.out.print("Enter temperature in Celsius: ");
+                input = scanner.nextDouble();
+                result = celsiusToFahrenheit(input);
+                System.out.println(input + " Celsius is " + result + " Fahrenheit.");
+                break;
+//            case 3:
+//                System.out.print("Enter weight in grams: ");
+//                input = scanner.nextDouble();
+//                result = gramsToPounds(input);
+//                System.out.println(input + " grams is " + result + " pounds.");
+//                break;
+//            default:
+//                System.out.println("Invalid choice.");
+//        }
+//
+//        scanner.close();
+//    }
+//}
+//}
