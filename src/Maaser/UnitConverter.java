@@ -46,9 +46,9 @@ public class UnitConverter {
                 result = gramsToPounds(input);
                 System.out.println(input + " grams is " + result + " pounds.");
                 break;
-//            default:
-//                System.out.println("Invalid choice.");
-//        }
+            default:
+                System.out.println("Invalid choice.");
+        }
 //
 //        scanner.close();
 //    }
