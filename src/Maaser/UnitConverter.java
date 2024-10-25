@@ -42,7 +42,7 @@ public class UnitConverter {
                 break;
             case 3:
                 System.out.print("Enter weight in grams: ");
-                input = scanner.nextDouble();
+                input = in.nextDouble();
                 result = gramsToPounds(input);
                 System.out.println(input + " grams is " + result + " pounds.");
                 break;
