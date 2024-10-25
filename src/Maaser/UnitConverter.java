@@ -40,12 +40,12 @@ public class UnitConverter {
                 result = celsiusToFahrenheit(input);
                 System.out.println(input + " Celsius is " + result + " Fahrenheit.");
                 break;
-//            case 3:
-//                System.out.print("Enter weight in grams: ");
-//                input = scanner.nextDouble();
-//                result = gramsToPounds(input);
-//                System.out.println(input + " grams is " + result + " pounds.");
-//                break;
+            case 3:
+                System.out.print("Enter weight in grams: ");
+                input = scanner.nextDouble();
+                result = gramsToPounds(input);
+                System.out.println(input + " grams is " + result + " pounds.");
+                break;
 //            default:
 //                System.out.println("Invalid choice.");
 //        }
