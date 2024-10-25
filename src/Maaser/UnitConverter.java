@@ -49,8 +49,8 @@ public class UnitConverter {
             default:
                 System.out.println("Invalid choice.");
         }
-//
-//        scanner.close();
-//    }
-//}
-//}
+
+        scanner.close();
+    }
+}
+}
