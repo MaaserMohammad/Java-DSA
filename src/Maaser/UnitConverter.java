@@ -41,7 +41,7 @@ public class UnitConverter {
                 System.out.println(input + " Celsius is " + result + " Fahrenheit.");
                 break;
             case 3:
-                System.out.print("Enter weight in grams: ");
+                System.out.print("Enter the weight in grams: ");
                 input = in.nextDouble();
                 result = gramsToPounds(input);
                 System.out.println(input + " grams is " + result + " pounds.");
