@@ -35,7 +35,7 @@ public class UnitConverter {
                 break;
 
             case 2:
-                System.out.print("Enter temperature in Celsius: ");
+                System.out.print("Enter the temperature in Celsius: ");
                 input = in.nextDouble();
                 result = celsiusToFahrenheit(input);
                 System.out.println(input + " Celsius is " + result + " Fahrenheit.");
