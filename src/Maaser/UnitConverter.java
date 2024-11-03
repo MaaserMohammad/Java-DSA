@@ -28,7 +28,7 @@ public class UnitConverter {
 
         switch (choice) {
             case 1:
-                System.out.print("Enter distance in kilometers: ");
+                System.out.print("Enter the distance in kilometers: ");
                 input = in.nextDouble();
                 result = kilometersToMiles(input);
                 System.out.println(input + " kilometers is " + result + " miles.");
