@@ -14,7 +14,7 @@ public class CircleArea_Circum {
         System.out.println("The area of circle is: " + area);
         //Circumference = 2*PI*radius
         double circumference = Math.PI * 2 * radius;
-        System.out.printf("The circumference of the circle is: %.4f\n", circumference ,area);
+        System.out.printf("The circumference of the circle is the: %.4f\n", circumference ,area);
     }
 }
 
