@@ -9,7 +9,7 @@ public class SimpleCurrencyExchanger {
         System.out.print("Indian Currency Amount:");
         double rupee= input.nextDouble();
 
-        //write code for usd
+        //exchange
         double excahngerate= 83.9;
         double dollar= rupee/excahngerate;
         System.out.println("USD value of currency:" + dollar);
