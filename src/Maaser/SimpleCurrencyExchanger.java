@@ -19,7 +19,9 @@ public class SimpleCurrencyExchanger {
         double euro = rupee / eurExchangeRate;
         double pound = rupee / gbpExchangeRate;
 
-
+        System.out.println("USD value of currency: " + dollar);
+        System.out.println("EUR value of currency: " + euro);
+        System.out.println("GBP value of currency: " + pound);
 
 
 
