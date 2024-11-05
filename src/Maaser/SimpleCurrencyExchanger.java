@@ -10,8 +10,8 @@ public class SimpleCurrencyExchanger {
         double rupee= input.nextDouble();
 
         //exchange
-        double excahngerate= 83.9;
-        double dollar= rupee/excahngerate;
+        double exchangerate= 83.9;
+        double dollar= rupee/exchangerate;
         System.out.println("USD value of currency:" + dollar);
     }
 }
