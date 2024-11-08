@@ -13,11 +13,13 @@ public class SimpleCurrencyExchanger {
         double usdExchangeRate = 83.9;
         double eurExchangeRate = 92.0;
         double gbpExchangeRate = 105.0;
+        double yenExchangeRate = 12.0;
 
         //Calculating conversion
         double dollar = rupee / usdExchangeRate;
         double euro = rupee / eurExchangeRate;
         double pound = rupee / gbpExchangeRate;
+        double yen = rupee / yenExchangeRate;
 
         System.out.println("USD value of currency: " + dollar);
         System.out.println("EUR value of currency: " + euro);
