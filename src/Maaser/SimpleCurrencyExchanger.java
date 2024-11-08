@@ -24,6 +24,7 @@ public class SimpleCurrencyExchanger {
         System.out.println("USD value of currency: " + dollar);
         System.out.println("EUR value of currency: " + euro);
         System.out.println("GBP value of currency: " + pound);
+        System.out.println("YEN Value of currency: " + yen);
 
         input.close();
     }
