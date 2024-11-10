@@ -14,4 +14,5 @@ public class ExpenseTracker {
             System.out.print("Choose an option: ");
             int choice = scanner.nextInt();
             scanner.nextLine();
+
 }
