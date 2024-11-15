@@ -15,9 +15,6 @@ public class ExpenseTracker {
             int choice = scanner.nextInt();
 
 
-
-
-
-
-
+        }
+    }
 }
